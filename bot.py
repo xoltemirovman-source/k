@@ -103,9 +103,9 @@ if not RENDER_EXTERNAL_HOSTNAME:
 WEBHOOK_URL = f"https://{RENDER_EXTERNAL_HOSTNAME}{WEBHOOK_PATH}"
 
 # ======================== Bot sozlamalari ========================
-BOT_USERNAME = "@Kinolarolami7bot"
-CHANNEL_USERNAME = "@kinolar_olami_i7"
-CHANNEL_URL = "https://t.me/kinolar_olami_i7"
+BOT_USERNAME = "@KinoClub_robot"
+CHANNEL_USERNAME = "@KinoClub_baza"
+CHANNEL_URL = "https://t.me/KinoClub_baza"
 
 
 # ======================== SELF-PING ========================
@@ -1073,7 +1073,7 @@ async def handle_code(update: Update, context: CallbackContext):
             return
         links_msg = (
             f"📱 Instagram: https://www.instagram.com/kino_sevarlar\n"
-            f"📣 Kino kanal: @kinolar_olami_i7 {CHANNEL_USERNAME}"
+            f"📣 Kino kanal: @KinoClub_baza {CHANNEL_USERNAME}"
         )
         await update.message.reply_text(links_msg)
         safe_task(send_ad(context.bot, user_id))
